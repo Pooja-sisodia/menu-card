@@ -16,7 +16,7 @@ const uniqueList = [...new Set
 const Cafe = () => {
 
   const [menuData, setMenuData] = useState(menu);
-  const [menuList, setMenuList] = useState(uniqueList);
+  const [menuList] = useState(uniqueList);
 
   const filterItem = (category) => {
     if(category==="All"){

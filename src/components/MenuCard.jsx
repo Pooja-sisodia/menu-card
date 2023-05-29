@@ -4,12 +4,12 @@ import "./style.css";
 const MenuCard = ({ menuData }) => {
   console.log(menuData);
   return (
-    <>
+  
       <section className="main-card-container">
         {menuData.map((currEle, index) => {
-          const {id, name, Dimage, category, description}  = currEle;
+          const {id, name, image, category, description}  = currEle;
           return (
-            <>
+            
               <div className="card_container " key={id}>
                 <div className="card">
                   <div className="card-body">
@@ -26,8 +26,8 @@ const MenuCard = ({ menuData }) => {
                     <div className="card-read">Read</div>
                     <div>
                       <img
-                        src={Dimage}
-                        alt="picture"
+                        src={image}
+                        alt={name}
                         className="card-media"
                       />
                       <span className="card-tag subtle">Orde Now</span>
@@ -35,12 +35,10 @@ const MenuCard = ({ menuData }) => {
                   </div>
                 </div>
               </div>
-            </>
           );
         })}
         ;
       </section>
-    </>
   );
 };
 

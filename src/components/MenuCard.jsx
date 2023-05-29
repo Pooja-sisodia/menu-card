@@ -6,11 +6,11 @@ const MenuCard = ({ menuData }) => {
   return (
     <>
       <section className="main-card-container">
-        {menuData.map((currEle) => {
+        {menuData.map((currEle, index) => {
           const {id, name, image, category, description}  = currEle;
           return (
             <>
-              <div className="card_container " key={id}>
+              <div className="card_container " key={index}>
                 <div className="card">
                   <div className="card-body">
                     <span className="card-number card-circle subtle">

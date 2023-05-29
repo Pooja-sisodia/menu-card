@@ -5,15 +5,18 @@ const Navbar = ({ filterItem, menuList }) => {
     <>
       <nav className="navbar">
         <div className="btn-group">
-          {menuList.map((currEle) => {
+          {menuList.map((currEle, index) => {
             return (
               <button
+                key={index}
                 className="btn-group-items"
-                onClick={() => filterItem(currEle)}>
+                onClick={() => filterItem(currEle)}
+              >
                 {currEle}
               </button>
-            )
-          })};
+            );
+          })}
+          ;
         </div>
       </nav>
     </>

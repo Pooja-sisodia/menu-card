@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
-import menu from "./menuAPI.js";
-import Navbar from "./Navbar.js";
-import MenuCard from "./MenuCard";
+import menu from './menuAPI';
+import Navbar from './Navbar';
+import MenuCard from './MenuCard';
 
 
 const uniqueList = [...new Set

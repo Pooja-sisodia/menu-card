@@ -4,7 +4,7 @@ const menu = [
   
     {
       id: 1,
-      image: Dosa,
+      Dimage: Dosa,
       name: "Dosa",
       category: "breakfast",
       price: "Rs. 120",
